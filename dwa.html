@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+        <button onclick="pokazTekst()">Pokaz Tekst</button>
+        <p id="wynik"></p>
+        <button onclick="obrazek()">Pokaż / ukryj obraz</button>
+        <img src="https://picsum.photos/200/300" alt="losowy obrazek"
+            style="display: none;" id="obraz">
+    <script>
+        /*
+        console.log("witaj swiecie");
+        document.write("witaj swiecie przez dokument");
+        document.getElementById('wynik').innerHTML =
+            "Zapisujemy do p z poziomu JS";
+        window.alert("to jest ostrzeżenie");
+        */
+        function pokazTekst()
+        {
+            document.getElementById('wynik').innerHTML =
+            "Zapisujemy do p z poziomu JS";
+        }
+        function obrazek() 
+        {
+            if(document.getElementById('obraz').style.display == "none")
+                document.getElementById('obraz').style.display = "block";
+                else
+                document.getElementById('obraz').style.display = "none";
+        }
+        
+
+    </script>
+</body>
+</html>
